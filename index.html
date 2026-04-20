@@ -247,6 +247,41 @@
       .headline { font-size: 16px; }
       .section-title { font-size: 22px; }
     }
+
+    .tentang-saya-content {
+    text-align: left; /* Poin-poin lebih rapi jika rata kiri */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.skill-list {
+    list-style: none; /* Menghilangkan titik bullet standar */
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skill-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.05); /* Memberikan sedikit kontras pada tiap poin */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.skill-list i {
+    color: #00d4ff; /* Warna ikon disesuaikan dengan aksen birumu */
+    margin-right: 12px;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.skill-list strong {
+    color: #ffffff;
+    display: block; /* Membuat judul skill berada di baris sendiri atau tebal */
+}
+
+    
   </style>
 </head>
 <body>
@@ -281,14 +316,32 @@
 </div>
 
 
-  <div class="about-card">
+<div class="about-card">
     <div class="about-content">
-      <h2>Tentang Saya</h2>
-      <p>Lulusan Agroteknologi (IPK 3.92) yang berdedikasi tinggi pada integrasi teknologi modern di sektor pertanian. Memiliki keahlian kuat dalam pengembangan solusi IoT menggunakan ESP8266/ESP32 untuk efisiensi agronomi, didukung kemampuan analisis data statistik riset yang mendalam (Minitab, GraphPad). Latar belakang pengalaman di Astra Daihatsu telah membentuk etos kerja industri yang disiplin, teliti, dan berorientasi pada hasil.</p>
-    </div>
-    <div class="about-image">
+
+   <div class="about-image">
       <img src="img/profil.jpg" alt="Feri Hartanto">
     </div>
+
+<div class="tentang-saya-content">
+  <p>Lulusan Agroteknologi (IPK 3.92) yang berdedikasi tinggi pada integrasi teknologi modern di sektor pertanian:</p>
+  
+  <ul class="skill-list">
+    <li>
+      <i class="fas fa-microchip"></i>
+      <span><strong>IoT Expert:</strong> Pengembangan solusi IoT menggunakan ESP8266/ESP32 untuk efisiensi agronomi.</span>
+    </li>
+    <li>
+      <i class="fas fa-chart-line"></i>
+      <span><strong>Data Analyst:</strong> Analisis data statistik riset mendalam menggunakan Minitab dan GraphPad.</span>
+    </li>
+    <li>
+      <i class="fas fa-industry"></i>
+      <span><strong>Professional Experience:</strong> Pengalaman di Astra Daihatsu yang membentuk etos kerja disiplin dan teliti.</span>
+    </li>
+  </ul>
+</div>
+
   </div>
 </header>
 
